@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    background:linear-gradient( #DC143C,white,#1c3b6c	);
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   margin-top: 5rem;
+   height: 100vh;
+   overflow: hidden;
+   width: 100vw;
+   margin-top: 0%;
+  }
+  .button{
+  color: white;
+  text-shadow: 1px 1px 7px #DC143C;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 51%;
+  cursor: pointer;
+  transition: all 0.6s;
+ 
+}
+
+.button1 {
+  position: relative;
+box-shadow: 1px 33px 60px #1c3b6c;
+font-size:55px;
+background-image: url(R.jpg);
+background-repeat: no-repeat;
+display: flex;
+/* justify-content: space-between; */
+margin-top: 91%;
+margin-left: 98%;
+border: none;
+
+}
+.button2 {
+  position: relative;
+  box-shadow: 1px 33px 60px #1c3b6c;
+  font-size:55px;
+  background-image: url(R.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+    /* justify-content: space-between; */
+  margin-top: -43%;
+  margin-left: -55%;
+    border: none;
+}
+.button3 {
+  position: relative;
+  box-shadow: 1px 33px 60px #1c3b6c;
+  font-size:55px;
+  background-image: url(R.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+    /* justify-content: space-between; */
+    margin-top: 35%;
+    border: none;
+    margin-left: 5rem;
+}
+.button1:hover{
+  /* box-shadow: 1px 33px 60px #ffffff; */
+  background-image: url(L.jpg);
+  color: #DC143C;
+  text-shadow: 2px 2px 5px #ffffff;
+
+   
+}
+.button2:hover{
+  box-shadow: 1px 33px 60px #DC143C;
+  background-image: url(L.jpg);
+  color: #DC143C;
+  text-shadow: 2px 2px 5px  white;
+
+}
+
+.button3:hover{
+  box-shadow: 1px 33px 60px #DC143C;
+  background-image: url(L.jpg);
+  color: #DC143C;
+  text-shadow: 2px 2px 5px  white;
+
+}
+.img{
+ position:absolute;
+ height: 100%;
+ 
+ width: 100%;
+
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  margin-top: 0rem;
+ margin-right: -9rem;
+
+}
+
+    /* .geet{ 
+  border: 2px solid;
+  height: 100%;
+  width: 30rem;
+  border-radius: 5px;
+  border-color: #00383;*/
+  
+
+
+</style>
+<body>
+  <div class="img">
+    <img src="boderb.png">
+  </div>
+ <div>
+
+  <!-- <div class="boder"><img src="boderb.png"></div>  -->
+  <div class="geet"> 
+    
+    <button class="button button1" onclick="song()">SONG</button>
+<br>
+<button class="button button2" onclick="card()">CARD</button>
+<br>
+<br>
+<button class="button button3" onclick="home()">Home</button>
+<br>
+    <script>function song(){
+      window.location.href="song.html"
+    }
+    function card(){window.location.href="mithilacover.html"}
+    
+    function home(){window.location.href="index.html"}</script>
+    </script>
+</body>
+
+</html>

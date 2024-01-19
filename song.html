@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zoom and Scroll Example</title>
+</head>
+<style>
+body{
+    background:linear-gradient( #DC143C,white,#1c3b6c	);
+   
+   /* margin-top: 1rem; */
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   /* gap: 18rem; */
+   margin: 0;
+    padding: 0;
+    /* Disable zooming */
+    zoom: 1;
+   
+}
+#maithiliAudio{
+    background-image:url(m.png);
+    height: 15rem;
+}
+#hindiAudio{
+    background-image:url(h.png);
+    height: 15rem;
+}
+.audio {
+    /* border: 2px solid; */
+    width: 70%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 24rem;
+    gap: 33.9rem;
+   margin-left: 12rem;
+  margin-bottom: 3rem;
+
+
+}
+
+.img{
+    margin-left: 25rem;
+    height: 9rem;
+    margin-top: 1.9rem;
+    position: fixed;
+}
+.btn{
+  position: absolute;
+  color: red;
+  left: 18px;
+  margin-left: 90%;
+  bottom: 4rem;
+  text-shadow: 0 0 5px white;
+
+}
+button{
+background-color:none; 
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "\2764";
+            
+        }
+
+        button:hover {
+            background-color: #1c3b6c; /* Slightly darker red on hover */
+            content: "\2764";
+        }
+
+        button::before {
+            content: "\2764"; /* Unicode heart symbol */
+            font-size: 36px;
+            color: rgb(255, 0, 0);
+        }
+/* #hindiAudio{
+background-image:;
+} */
+
+
+</style>
+<body>
+    <div class="img">
+        <img src="mm.png" alt="img">
+    
+    </div>
+<div class="audio">
+    <audio controls id="hindiAudio">
+        <source src="hbdhindi.mp3" type="audio/mpeg">
+    </audio>
+    
+        <audio controls id="maithiliAudio">
+            <source src="hbdmaithili.mp3" type="audio/mpeg">
+        </audio>
+</div>
+
+</div>
+   
+</div>
+    <!-- <button><span><a href="/html/button.html" target=""><u>Back</u></a></span></button> -->
+    <button class="btn" onclick="btn()">← Back</button>
+
+</div>
+<script>
+  function btn(){
+    window.location.href="button.html";
+  }
+</script>
+</body>
+<script>
+    // Hindi audio aur Maithili audio ke references prapt karen
+const hindiAudio = document.getElementById('hindiAudio');
+const maithiliAudio = document.getElementById('maithiliAudio');
+
+// Hindi audio chalane aur Maithili audio band karne ke liye ek function ka istemal karen
+function hindiAudioChalaoAurMaithiliAudioBandKaro() {
+    hindiAudio.play();
+    maithiliAudio.pause();
+}
+
+// Maithili audio chalane aur Hindi audio band karne ke liye ek function ka istemal karen
+function maithiliAudioChalaoAurHindiAudioBandKaro() {
+    maithiliAudio.play();
+    hindiAudio.pause();
+}
+
+// Hindi audio ko chalane ke liye ek event listener jodhen
+hindiAudio.addEventListener('play', () => {
+    maithiliAudio.pause();
+});
+
+// Maithili audio ko chalane ke liye ek event listener jodhen
+maithiliAudio.addEventListener('play', () => {
+    hindiAudio.pause();
+});
+
+// Hindi audio chalane aur Maithili audio band karne ke liye ek button ka istemal karen
+const hindiAudioChalaoButton = document.getElementById('hindiAudioChalaoButton');
+hindiAudioChalaoButton.addEventListener('click', () => {
+    hindiAudioChalaoAurMaithiliAudioBandKaro();
+});
+
+// Maithili audio chalane aur Hindi audio band karne ke liye ek button ka istemal karen
+const maithiliAudioChalaoButton = document.getElementById('maithiliAudioChalaoButton');
+maithiliAudioChalaoButton.addEventListener('click', () => {
+    maithiliAudioChalaoAurHindiAudioBandKaro();
+});
+
+    
+    </script>
+</html>

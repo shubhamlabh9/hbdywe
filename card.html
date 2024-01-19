@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detect Key Presses</title>
+    <!-- Google Fonts -->
+    <link 
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serf;
+  }
+  
+  body{
+    background:linear-gradient( #DC143C,white,#1c3b6c	);
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   margin-top: 5rem;
+   height: 100vh;
+   
+  }
+.wrapper{
+  height: 35rem;
+  width: 60rem;
+  margin-top: 1.9rem;
+  margin-left: -0.3rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 3rem; */
+  box-shadow: 0 0 11px #003893;
+  border-radius: 5px;
+  background-color: rgb(0-56-147);
+  transition: all  0.4s;
+  border-left: 3px;
+  border-right: 3px;
+}
+.img {
+  /* border: 2px solid; */
+  height: 100%;
+  width: 30rem;
+  border-radius: 5px;
+  border-color: #003893;
+  
+
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  border-left: 6px;
+  border-radius:0  5px 5px 0;
+  /* border-color: #003893; */
+  overflow: hidden;
+}
+/* .wrapper:hover{
+  transform: scale(1.02);
+  box-shadow : 5px; ;
+} */
+.card{
+border: 2px solid white;
+height: 100%;
+width: 50%;
+text-align:  center;
+color: white;
+background-color: #ff496c;
+font-family: sans-serif; 
+}
+.card p{
+  margin-top: 25%;
+
+}
+.wrapper:hover{
+  /* transition-duration:0.6s;
+ -webkit-transform:rotate(-6deg); */
+ transform: rotate(-6deg);
+}
+/* button{
+  position: absolute;
+  margin-top: 31rem;
+  color: white;
+  margin-left: 70%;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 0.8rem;
+  border: none;
+  background-color: #1c3b6c;
+  color :rgb(228, 223, 223);
+  transition: all 0.3s;
+} */
+P{
+  font-family: cursive;
+  margin-top: 1rem;
+  font-size: 27px;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+/* button:hover{
+color: white;
+transform: scale(1.08);
+background-color: #DC143C;
+border: 2px solid rgb(39, 30, 30); 
+cursor: pointer;
+ }*/
+ .btn{
+  position: absolute;
+  color: red;
+  left: 18px;
+  margin-left: 81%;
+  bottom: 4rem;
+  text-shadow: 0 0 5px white;
+
+}
+button{
+  position: fixed;
+background-color:none; 
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "\2764";
+            
+        }
+
+        button:hover {
+            background-color: #1c3b6c; /* Slightly darker red on hover */
+            content: "\2764";
+        }
+
+        button::before {
+            content: "\2764"; /* Unicode heart symbol */
+            font-size: 36px;
+            color: rgb(255, 0, 0);
+        }
+  </style>
+
+
+<body>
+   
+<div class="wrapper">
+  
+    <!-- <button class="id">Next</button>
+  </button> -->
+  
+    <div class="card">
+      <p>"Wishing you a day filled not just with the present, but with the warmth of past day's memories that bring a smile to your face. Happy Birthday, and may your heart be as full as your memory lane.<br>
+         Happy birthday BHAIYA!"</p>
+    <!-- </div>
+     <a href="URL"><div class="img">
+      <img src="/img/dik.jpg" alt="/html/end.html">
+</a> -->
+     </div>
+     <div class="img">
+      <img src="dik.png">
+    </div>
+  </div>
+  <div>
+    <button class="btn" onclick="btn()">← Back</button>
+  </div>
+    <!-- <button class="btn" onclick="end()">Next →</button> -->
+
+<script>
+  function btn(){
+    window.location.href="button.html";
+  }
+</script>
+  </body>
+</html> 
+

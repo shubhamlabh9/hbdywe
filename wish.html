@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+h1{
+position: absolute;
+  text-align: center;
+  text-shadow: 0 0 5px rgb(255, 238, 0);
+  font-size: 3.9rem;
+  color:   #1c3b6c;
+  transition: all 0.3s;
+  /* border: 2px solid; */
+  margin-top: 3.9rem;
+  margin-left: 17rem;
+  /* text-shadow: 0 0 10px #DC143C; */
+ 
+}
+  h1:hover{
+  transform: scale(1.02);
+  box-shadow : 5px; 
+  font-size: 5rem;
+  margin-top: 3.9rem;
+  margin-left: 5.1rem;
+}
+.a{
+position: absolute;
+  text-align: center;
+  text-shadow: 0 0 5px rgb(255, 238, 0);
+  font-size: 2.7rem;
+  color:  #1c3b6c;
+  transition: all 0.3s;
+  /* border: 2px solid; */
+  margin-top: 13.5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  text-shadow: 1 1 13px #dc1414;
+ 
+}
+ 
+   
+
+.b{
+position: absolute;
+  text-align: center;
+  text-shadow: 0 0 5px rgb(255, 238, 0);
+  font-size: 2.7rem;
+  color: #dc1414;
+  transition: all 0.3s;
+  /* border: 2px solid; */
+  margin-top: 25rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  /* text-shadow: 0 0 10px #1c3b6c ; */
+ 
+}
+ 
+body, html {
+  height: 100%;
+  margin: 0;
+
+    background:linear-gradient( #DC143C,white,#1c3b6c	);
+   /* display: flex;
+   justify-content: center; */
+   
+   height: 100vh;
+   overflow: hidden;
+}
+ .btn{
+  position: absolute;
+  color: red;
+  left: 18px;
+  margin-left: 81%;
+  bottom: 4rem;
+  text-shadow: 0 0 5px white;
+
+}
+button{
+background-color:none; 
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: "\2764";
+            
+        }
+
+        button:hover {
+            background-color: #1c3b6c; /* Slightly darker red on hover */
+            content: "\2764";
+        }
+
+        button::before {
+            content: "\2764"; /* Unicode heart symbol */
+            font-size: 36px;
+            color: rgb(255, 0, 0);
+        }
+.img img{
+  height: 100vh;
+  width: 216vh;
+}
+
+</style>
+<body>
+    
+        <h1>🪔"Happy Birthday, Bhaiya" 🪔 <hr></h1>
+         <!-- <h1>🪔"Happy Birthday <hr></h1> -->
+     <h2 class="a"> You who always knows how to fix things, both in machines and in life, happy birthday! May your year be filled with smooth operations, efficient coding, and the joy of continuous upgrades. <br> Happy Birthday,  BHAIYA 🥳🎉"</h2> 
+        <div class="img">
+          <img src="boder.png" alt="">
+       </div>
+        <button class="btn" onclick="hindi()">→</button>
+        <script>
+        function hindi(){
+window.location.href="button.html"
+        }</script>
+</body>
+</html>
